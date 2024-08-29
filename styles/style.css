@@ -8,7 +8,7 @@
 }
 
 body, html {
-    background-color: blueviolet;
+    background-image: linear-gradient(to top, #37c7ad, blueviolet);
     height: 100vh;
     width: 100vw;
 }
@@ -22,7 +22,7 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 540px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px hsla(0, 0%, 0%, 0.450);
     /* para deixar no meio na tela */
@@ -54,9 +54,81 @@ div#formulario > h1 {
     margin-bottom: 10px;
 }
 div#formulario > h1 {
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 div#formulario > p {
+    font-size: 1em;
+}
+
+form > div.campo {
+    background-color: blueviolet;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+div.campo > label {
+    display: none;
+}
+
+div.campo > span {
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #37c7ad;
+    font-size: 1em;
+    width: calc(100%-50%);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+/* Botão de entrar */
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    background-color: #37c7ad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #28937f;
+}
+
+/* Botão Esqueci a senha */
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    margin-top: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid #28937f;
+    text-decoration: none;
+    
+}
+
+form > a.botao:hover {
+    background-color: #37c7ad;
+}
+
+form > a.botao > span {
     font-size: 1.2em;
 }
